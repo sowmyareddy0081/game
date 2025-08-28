@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Homemade Ice Cream Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="recipe-card">
+    <h1 class="recipe-title">Homemade Ice Cream</h1>
+    <img src="https://images4.alphacoders.com/212/thumb-1920-212256.jpg" 
+         alt="Homemade Ice Cream" class="recipe-img">
+    
+    <div class="recipe-info">
+        <span>Prep Time: <strong>20 minutes</strong></span>
+        <span>Freeze Time: <strong>4 hours</strong></span>
+        <span>Serving: <strong>6</strong></span>
+    </div>
+
+    <!-- INGREDIENTS -->
+    <button id="toggleIngredients">Show Ingredients</button>
+    <ul class="ingredients hidden">
+        <li>2 cups heavy cream</li>
+        <li>1 cup whole milk</li>
+        <li>3/4 cup sugar</li>
+        <li>1 tsp vanilla extract</li>
+        <li>Pinch of salt</li>
+        <li>Optional: Chocolate chips, fruits, or toppings</li>
+    </ul>
+
+    <!-- STEPS -->
+    <button id="toggleSteps">Show Steps</button>
+    <ol class="steps hidden">
+        <li>In a mixing bowl, whisk together cream, milk, sugar, salt, and vanilla extract.</li>
+        <li>Pour the mixture into an ice cream maker and churn until thick.</li>
+        <li>If you don’t have an ice cream maker, place mixture in freezer and stir every 30 mins.</li>
+        <li>Once thickened, transfer to an airtight container.</li>
+        <li>Freeze for at least 4 hours or until firm.</li>
+        <li>Scoop into bowls, add toppings, and serve.</li>
+    </ol>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-container hidden">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="button-container">
+        <button id="startCooking">Start Cooking</button>
+        <button id="nextStep" disabled>Next Step</button>
+        <button id="printRecipe">Print Recipe</button>
+    </div>
+
+    <!-- TIMER -->
+    <p id="timer">Time Remaining: --:--</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
